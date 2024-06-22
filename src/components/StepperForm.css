@@ -1,0 +1,137 @@
+/* src/components/StepperForm.css */
+.stepper-form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.step-header button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  background-color: #d6d6d6;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+.step-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.budget-step h2,
+.details-step h2,
+.confirmation-step h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.budget-step h3,
+.details-step h3,
+.confirmation-step h3 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 1px solid #d6d6d6;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.options button:hover,
+.options button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.privacy-note {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.next-button,
+.prev-button,
+.submit-button,
+.home-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
